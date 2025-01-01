@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Harold - Landing Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content=" " />
+    <meta name="keywords" content="" />
+    <meta content="Themesdesign" name="author" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <!-- Bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.min.css"
+      type="text/css"
+      id="bootstrap-style"
+    />
+
+    <!-- Material Icon Css -->
+    <link
+      rel="stylesheet"
+      href="css/materialdesignicons.min.css"
+      type="text/css"
+    />
+
+    <!-- Unicon Css -->
+    <link
+      rel="stylesheet"
+      href="../../../unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/tiny-slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/tiny-slider.css.html" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.min.css" type="text/css" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71">
+    <!-- light-dark mode button -->
+    <a
+      href="javascript: void(0);"
+      id="mode"
+      class="mode-btn text-white rounded-end"
+    >
+      <i class="uil uil-brightness mode-dark mx-auto"></i>
+      <i class="uil uil-moon bx-spin mode-light"></i>
+    </a>
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+      <div class="container-fluid custom-container">
+        <!-- <a class="navbar-brand logo text-uppercase" href="index.html">
+                <img src="images/logo-light.png" class="logo-light" alt="" height="34">
+                <img src="images/logo-dark.png" class="logo-dark" alt="" height="34">
+            </a> -->
+
+        <button
+          class="navbar-toggler me-3 order-2 ms-4"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-label="Toggle navigation"
+        >
+          <i class="mdi mdi-menu"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto navbar-center">
+            <li class="nav-item active">
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item dropdown dropdown-hover">
+              <a href="#aboutme" class="nav-link">About</a>
+            </li>
+            <li class="nav-item dropdown dropdown-hover">
+              <a href="#work" class="nav-link">Work</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <!--end navbar-nav-->
+          <div class="ms-auto ps-2 ps-lg-0">
+ 
+            <label class="switch">
+              <input id="input" type="checkbox" checked="darkTheme" />
+              <div class="slider round">
+                <div class="sun-moon">
+                  <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                  </svg>
+                  <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                  </svg>
+                  <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                  </svg>
+                  <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                  </svg>
+                  <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                  </svg>
+                  <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                  </svg>
+            
+                  <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                  </svg>
+                  <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                  </svg>
+                  <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                  </svg>
+                  <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                  </svg>
+                  <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                  </svg>
+                  <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                  </svg>
+                </div>
+                <div class="stars">
+                  <svg id="star-1" class="star" viewBox="0 0 20 20">
+                    <path
+                      d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                    ></path>
+                  </svg>
+                  <svg id="star-2" class="star" viewBox="0 0 20 20">
+                    <path
+                      d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                    ></path>
+                  </svg>
+                  <svg id="star-3" class="star" viewBox="0 0 20 20">
+                    <path
+                      d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                    ></path>
+                  </svg>
+                  <svg id="star-4" class="star" viewBox="0 0 20 20">
+                    <path
+                      d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </label>
+            
+          </div>
+        </div>
+      </div>
+      <!--end container-->
+    </nav>
+    <!-- Navbar End -->
+    <section
+      class="home"
+      id="home"
+      style="background-image: url(images/home5.png)"
+    >
+      <!-- start container -->
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="home-slider" id="home-slider">
+              <div class="item">
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <div class="content-item">
+                      <p class="text-warning fw-semibold mb-0">Hello! I AM</p>
+                      <div class="home-title mb-0 fw-bold h1">
+                        <span
+                          class="typewrite"
+                          data-period="2000"
+                          data-type='[ "Vikalp Tripathi.","Web Developer." ]'
+                        >
+                          <span class="wrap text-dark"></span>
+                        </span>
+                      </div>
+                      <p class="mt-3 text-muted">
+                        Creating intuitive and visually appealing designs for
+                        complex interfaces is what I’m most passionate about. I
+                        also enjoy building user-friendly products, exploring
+                        innovative solutions, and constantly pushing the
+                        boundaries of creativity.
+                      </p>
+
+                      <div class="icon-item mt-4">
+                        <div class="d-flex">
+                          <a href="#">
+                            <div class="social-icon instagram avatar-sm">
+                              <i class="mdi mdi-instagram"></i>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="social-icon twitter avatar-sm">
+                              <i class="mdi mdi-twitter"></i>
+                            </div>
+                          </a>
+                          <a href="https://www.linkedin.com/in/vikalp-tripathi-235126218/">
+                            <div class="social-icon linkedin avatar-sm">
+                              <i class="mdi mdi-linkedin"></i>
+                            </div>
+                          </a>
+                        </div>
+                        <a
+                          href="https://drive.google.com/file/d/1H8YKz2NJGkHVEPOOrvaQ1ppl5VkbpwAO/view?usp=drive_link"
+                        >
+                          <button class="button">
+                            <span class="button_lg">
+                              <span class="button_sl"></span>
+                              <span class="button_text"> Download Resume</span>
+                            </span>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="my-image">
+                      <img
+                        src="images/home/home5.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end home section -->
+
+    <!-- about-me section -->
+    <section class="section about-me" id="aboutme" style="color: aqua">
+      <!-- container -->
+      <div class="container">
+        <div class="about-box">
+          <div class="row">
+            <div class="col-lg-6 position-relative">
+              <div class="image-round"></div>
+              <div class="about-image p-4 pb-0">
+                <img src="images/about.png" alt="" class="img-fluid" />
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="about-item p-5">
+                <h2 class="display-5 fw-semibold">About Me</h2>
+                <p class="text-muted fs-14">
+                  Detail-oriented and ambitious fresher with a Master's in
+                  Computer Application, seeking a challenging role in Product
+                  Management. Passionate about understanding user needs,
+                  managing product lifecycles, and delivering customer-focused
+                  solutions. Equipped with strong problem-solving skills, a
+                  technical foundation, and the ability to collaborate across
+                  teams to achieve organizational goals.
+                </p>
+
+                <ul
+                  class="nav nav-pills mb-3 mt-4 pt-2"
+                  id="pills-tab"
+                  role="tablist"
+                >
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="pills-home-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-home"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-home"
+                      aria-selected="true"
+                    >
+                      Skills
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-profile-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-profile"
+                      aria-selected="false"
+                    >
+                      Experience
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-contact"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false">
+                    Education
+                    </button>
+                </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                <div
+                    class="tab-pane fade show active"
+                    id="pills-home"
+                    role="tabpanel"
+                    aria-labelledby="pills-home-tab"
+                >
+                    <div class="skill-item mt-4 pt-2">
+                    <div class="d-flex justify-content-between">
+                        <h6>Development</h6>
+                        <h6>65%</h6>
+                    </div>
+                    <div class="progress" style="height: 5px">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="65"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 65%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="skill-item mt-4 pt-2">
+                      <div class="d-flex justify-content-between">
+                        <h6>Design</h6>
+                        <h6>75%</h6>
+                      </div>
+                      <div class="progress" style="height: 5px">
+                        <div
+                          class="progress-bar bg-warning"
+                          role="progressbar"
+                          aria-valuenow="75"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 75%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="skill-item mt-4 pt-2">
+                      <div class="d-flex justify-content-between">
+                        <h6>Database</h6>
+                        <h6>70%</h6>
+                      </div>
+                      <div class="progress" style="height: 5px">
+                        <div
+                          class="progress-bar bg-warning"
+                          role="progressbar"
+                          aria-valuenow="70"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 70%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-profile"
+                    role="tabpanel"
+                    aria-labelledby="pills-profile-tab"
+                  >
+                    <div class="experience">
+                      <div class="row position-relative">
+                        <div class="col-2">
+                          <div class="border-left"></div>
+                        </div>
+                        <div class="col-10">
+                          <div class="mt-4 pt-2">
+                            <h5>PHP Developer(Intern) at Chetu Software</h5>
+                            <p class="text-muted fs-15">
+                              Apr 2024-Oct 2024 (6 months Experience)
+                            </p>
+                            <p class="text-muted fs-15">
+                              • PHP Developer Intern: Developed dynamic web
+                              applications using PHP , focusing on backend
+                              functionalities and database management.
+                            </p>
+                            <p style="color: rgba(255, 255, 255, 0.637)">
+                              • Frontend Integration: Collaborated on frontend
+                              development using HTML, CSS, JS, ensuring seamless
+                              integration with backend services for enhanced
+                              user experience.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-contact"
+                    role="tabpanel"
+                    aria-labelledby="pills-contact-tab"
+                  >
+                    <div class="experience">
+                      <div class="row position-relative">
+                        <div class="col-2">
+                          <div class="border-left"></div>
+                        </div>
+                        <div class="col-10">
+                          <div class="mt-4 pt-2">
+                            <h5>Bachelor of Computer Applications</h5>
+                            <p class="text-muted fs-15 mb-0">
+                              2018-2021 (3 year)
+                            </p>
+                            <p class="text-muted fs-15 mb-0">
+                              "Earned a BCA with expertise in programming,
+                              software development, and project creation."
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row position-relative">
+                        <div class="col-2">
+                          <div class="border-left"></div>
+                        </div>
+                        <div class="col-10">
+                          <div class="mt-4 pt-2">
+                            <h5>Master of Computer Applications</h5>
+                            <p class="text-muted fs-15 mb-0">
+                              2022-2024 (2 year)
+                            </p>
+                            <p class="text-muted fs-15">
+                              "Completed MCA with advanced skills in software
+                              development, system design, and innovative project
+                              execution."
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end about-me -->
+
+    <!-- start counter -->
+    <section class="section counter" id="counter">
+      <div class="heading">
+        <h1>Projects</h1>
+      </div>
+      <div class="container">
+        <div class="box">
+          <span></span>
+          <div class="content">
+            <h2>DAMS</h2>
+            <p>
+              "Built a web-based Doctor Appointment System with patient booking,
+              doctor management, and appointment approval features."
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <span></span>
+          <div class="content">
+            <h2>BMS</h2>
+            <p>
+              "Developed a Bank Management System using PHP, MySQL, and AJAX for
+              efficient account management, transactions, and real-time
+              operations."
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <span></span>
+          <div class="content">
+            <h2>Expiry Tracker</h2>
+            <p>
+              "The Expire Tracker is a web app built with HTML, CSS, JS, and PHP
+              to track product expiry dates with a responsive dashboard and
+              expiry notifications."
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <span></span>
+          <div class="content">
+            <h2>Student Portal</h2>
+            <p>
+                "Developed a web-based platform with features for student registration, course management, and academic progress tracking."
+            </p>
+          </div>
+        </div>
+        <!-- <div class="box">
+          <span></span>
+          <div class="content">
+            <h2>DAMS</h2>
+            <p>
+              "Built a web-based Doctor Appointment System with patient booking,
+              doctor management, and appointment approval features."
+            </p>
+          </div>
+        </div> -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end counter -->
+
+    <!-- start contact -->
+    <section class="contact pt-5 pb-0" id="contact">
+      <!-- start container -->
+      <div class="container">
+        <div class="shape-1">
+          <img src="images/testi/shape.png" alt="" class="img-fluid" />
+        </div>
+
+        <div class="contact-item" style="color: aqua">
+          <div class="row align-items-center">
+            <div class="col-lg-5">
+              <div class="contact-info">
+                <div class="mb-4">
+                  <h3>Let's Connect</h3>
+                  <p class="text-muted mb-0">
+                    Looking for help? Fill the form and start a new adventure.
+                  </p>
+                </div>
+
+                <hr />
+
+                <div class="info-content mt-4">
+                  <h6>Address :</h6>
+                  <div class="d-flex">
+                    <div class="icon">
+                      <i class="mdi mdi-home-outline fs-24 text-primary"></i>
+                    </div>
+                    <div class="icon-content ms-3">
+                      <p class="mb-0 fs-15">
+                        D2/90, Akash Nagar,<br />
+                        Ghaziabad 201015
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="info-content mt-4 pt-2">
+                  <h6>Phone :</h6>
+                  <div class="d-flex">
+                    <div class="icon">
+                      <i class="mdi mdi-phone-outline fs-24 text-primary"></i>
+                    </div>
+                    <div class="icon-content ms-3">
+                      <p class="mb-0 fs-15">(+91) 1234567890</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="info-content mt-4 pt-2">
+                  <h6>Support :</h6>
+                  <div class="d-flex">
+                    <div class="icon">
+                      <i class="mdi mdi-email-outline fs-24 text-primary"></i>
+                    </div>
+                    <div class="icon-content ms-3">
+                      <p class="mb-0 fs-15">vikalp@gmail.com</p>
+                      <p class="mb-0 fs-15">help@.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="custom-form mt-4" id="form">
+                <form
+                  method="post"
+                  name="myForm"
+                  onsubmit="return validateForm()"
+                >
+                  <h6 class="mb-0 text-muted">Let's talk</h6>
+                  <h3>Looking to build a stunning and functional website?</h3>
+                  <p class="fs-15 text-muted">
+                    I specialize in creating tailored solutions that bring your
+                    ideas to life. Whether it's a personal portfolio, a business
+                    site, or a creative project, let's turn your vision into
+                    reality.
+                  </p>
+                  <p id="error-msg" style="opacity: 1">
+                    <!-- <div class="alert alert-warning">*Please enter a Name*</div> -->
+                  </p>
+
+                  <div id="simple-msg"></div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input
+                          name="name"
+                          id="name"
+                          type="text"
+                          class="form-control contact-form"
+                          placeholder="Your name"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input
+                          name="email"
+                          id="email"
+                          type="email"
+                          class="form-control contact-form"
+                          placeholder="Your email"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group mt-2">
+                        <input
+                          type="text"
+                          class="form-control contact-form"
+                          id="subject"
+                          placeholder="Your Subject.."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group mt-2">
+                        <textarea
+                          name="comments"
+                          id="comments"
+                          rows="4"
+                          class="form-control contact-form h-auto"
+                          placeholder="Your message..."
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row my-2">
+                    <div class="col-lg-12 d-grid">
+                      <button class="BUTTON">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span>SEND</span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shape-2">
+          <img src="images/testi/shape-2.png" alt="" class="img-fluid" />
+        </div>
+
+        <div class="shape-3">
+          <img src="images/testi/shape-3.png" alt="" class="img-fluid" />
+        </div>
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end contact -->
+
+    <!-- theme section -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.querySelector('#input');
+            
+            // Check for saved theme preference or default to dark theme
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            themeToggle.checked = savedTheme === 'dark';
+          
+            // Theme toggle handler
+            themeToggle.addEventListener('change', function() {
+              const theme = this.checked ? 'dark' : 'light';
+              document.documentElement.setAttribute('data-theme', theme);
+              localStorage.setItem('theme', theme);
+            });
+          });
+    </script>
+    <!-- theme end  -->
+
+    <!-- navbar hide and show  -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let lastScrollTop = 0;
+            const navbar = document.getElementById('navbar');
+            const navbarHeight = navbar.offsetHeight;
+            
+            window.addEventListener('scroll', function() {
+              let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+              
+              // Add some threshold to prevent tiny scroll fluctuations from triggering the effect
+              if (Math.abs(lastScrollTop - currentScroll) <= 10) return;
+              
+              // Scrolling down and past navbar height
+              if (currentScroll > lastScrollTop && currentScroll > navbarHeight) {
+                navbar.style.transform = 'translateY(-100%)';
+                navbar.style.transition = 'transform 0.3s ease-in-out';
+              } 
+              // Scrolling up
+              else {
+                navbar.style.transform = 'translateY(0)';
+                navbar.style.transition = 'transform 0.3s ease-in-out';
+              }
+              
+              lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+            }, { passive: true });
+          });
+    </script>
+
+    <!-- navbarshow ends  -->
+
+    <!--Bootstrap Js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Slider Js -->
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <!-- conter -->
+    <script src="js/counter.init.js"></script>
+
+    <!-- App Js -->
+    <script src="js/app.js"></script>
+  </body>
+
+  <!-- Mirrored from themesdesign.in/harold/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Dec 2024 15:56:25 GMT -->
+</html>
